@@ -1,0 +1,40 @@
+.add-city-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-city-container__input{
+    margin: 0;
+    padding: 4px 2em 4px 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 2em;
+}
+
+.add-city-container__button{
+    margin-left: 1em;
+    font-size: 2em;
+    width: calc(2em - 2px);
+    align-self: flex-end;
+
+}
+
+.add-city-container__hint{
+    background-color: #b8d4ed;
+    color: white;
+    font-size: 1.5em;
+}
+
+.add-city-container__hint>*{
+   border-bottom: 1px dashed black;
+    padding: 4px 0;
+}
+
+.add-city-container__hint>*:last-child{
+    border-bottom: none;
+}
+
+.add-city-container__hint>*:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
