@@ -10,7 +10,6 @@ export default function (){
 
     const dispatch = useDispatch()
     function onCloseClickHandler(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-        console.log(123)
         if(!(e.target as Element).id) return
         const [target, id] = (e.target as Element).id.split('-')
         dispatch({type: 'cityList/remove', payload: id})
